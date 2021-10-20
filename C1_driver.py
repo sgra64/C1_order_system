@@ -83,7 +83,7 @@ if __name__ == "__main__":
     # print resulting customer list using the built-in map() function
     list(map(lambda c: print(f" - {c.name}, {c.address}"), _filtered_by_name))
 
-    # find all orders of each customer
+    # find all orders for each customer
     print_orders(258090)    # customer 258090: 2 orders with 1 item each
     # print_orders(368075)    # customer 368075: 1 order with 1 item each
     # print_orders(986973)    # customer 986973: 1 order with 4 items
