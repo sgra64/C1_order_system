@@ -12,10 +12,11 @@ class Stock:
         :param _units_available: units available in stock (private)
         :param _category: stock category
         """
+        #
+        # TODO: complete constructor with attributes and initialization
+        #
         self.__sku = _id                            # private, final, cannot be altered
-        # self.description = _description
-        # self.__price = 0                            # private
-        # self.set_price(_price)
-        # self.__units_available = _units_available   # private
 
+    #
     # TODO: complete class
+    #

@@ -16,10 +16,14 @@ class Order:
         :param _units_available: units available in stock (private)
         :param _category: stock category
         """
+        #
+        # TODO: complete constructor with attributes and initialization
+        #
         self.__id = _id                     # private, final attribute, cannot be altered
 
+    #
     # TODO: complete class
-
+    #
 
 class OrderItem:
     def __init__(self, _sku: str, _units: int):

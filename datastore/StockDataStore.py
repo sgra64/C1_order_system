@@ -12,7 +12,17 @@ class StockDataStore:
         Constructor
         """
         # print(f'StockDataStore singleton instantiated')
+        #
+        # TODO: complete constructor with attributes and initialization
+        #
         pass
 
+    #
+    # TODO: complete missing functions
+    #
+
     def size(self) -> int:
+        #
+        # TODO: complete function
+        #
         return 0

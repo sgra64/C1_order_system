@@ -25,11 +25,15 @@ class DataFactory:
         return self
 
     def import_stock(self, _stock: []) -> DataFactory:
-        # TODO:
+        #
+        # TODO: complete function
+        #
         return self
 
     def import_orders(self, _orders: []) -> DataFactory:
-        # TODO:
+        #
+        # TODO: complete function
+        #
         return self
 
     def __add_customer_from_tuple(self, _t: ()):
@@ -44,10 +48,14 @@ class DataFactory:
 
     def __add_stock_from_tuple(self, _t: ()):
         # sample tuple: ('0931C010', 'EOS 1D X Mark II Gehäuse', 6299.0, 2, 'Digitale Spiegelreflexkameras')
-        # TODO:
+        #
+        # TODO: complete function
+        #
         pass
 
     def __add_order_from_tuple(self, _t: ()):
         # sample tuple: ('00-937-09641', 714268, '2520A015', 1, 'EF 135mm f/2L USM ')
-        # TODO:
+        #
+        # TODO: complete function
+        #
         pass

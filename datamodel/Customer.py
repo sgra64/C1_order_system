@@ -26,18 +26,18 @@ class Customer:
 
 def last_name_func(_c: Customer) -> str:
     """
-    return lastname part of customer name, e.g. "Megan Cantrell" -> "Megan "Cantrell"
+    return lastname part of customer name, e.g. "Megan Cantrell" -> "Cantrell"
     :param _c: customer object
     :return: last name part of name attribute
     """
-    return _c.name[_c.name.index(" ") + 1:] if " " in _c.name else ""
+    return _c.name[_c.name.index(" ") + 1:] if " " in _c.name else _c.name
 
 
 def last_name_with_split(_c: Customer) -> str:
     _splits = _c.name.split(" ")
     if len(_splits) > 1:
         return _splits[1]
-    return ""
+    return _c.name
 
 
 def last_name_with_slice(_c: Customer) -> str:
@@ -45,4 +45,4 @@ def last_name_with_slice(_c: Customer) -> str:
         _i = _c.name.index(" ") + 1  # index throws ValueError exception
         return _c.name[_i:]
     except ValueError:
-        return ""
+        return _c.name
