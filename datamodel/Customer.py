@@ -5,8 +5,8 @@ class Customer:
 
     def __init__(self, _id: int, _name: str = "", _address: str = "", _phone: str = ""):
         """
-        Constructor of class
-        :param _id: customer identifier (private, final, cannot be altered)
+        Constructor
+        :param _id: customer id attribute (private, final, cannot be altered)
         :param _name: customer name (default="")
         :param _address: customer address (default="")
         :param _phone: customer phone number (default="")
