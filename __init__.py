@@ -10,7 +10,7 @@ ods = ds.OrderDataStore()
 ds.DataFactory(cds, sds, ods) \
       .import_customers(data.customers) \
       .import_stock(data.stock) \
-      .import_orders(data.orders)
+      .import_orders(data.order_items)
 
 print(f"--> {cds.size()} customers, {sds.size()} stock items, {ods.size()} "
       "orders loaded.")

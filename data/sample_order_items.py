@@ -1,5 +1,7 @@
-
-sample_orders = [
+"""
+Sample order data, each tuple represents an order item
+"""
+sample_order_items = [
     # order_id, customer_id, stock_id, units_ordered, description
     ("00-784-33313", 862466, "4417B001", 5, "EOS 80D Gehäuse + EF-S 18-55mm f/3.5-5.6 IS STM"),
     ("00-184-40592", 952417, "1575C001", 1, "EOS M50 Gehäuse - Schwarz + EF-M 18-150mm f/3.5-6.3 IS STM Kit"),

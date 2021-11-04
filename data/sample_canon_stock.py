@@ -1,4 +1,6 @@
-
+"""
+Sample stock data
+"""
 sample_canon_stock = [
     # SKU/stock_id, description,      unit price, units_in_stock, product category
     ("2208C002", "PowerShot G1 X Mark III", 1199.00, 9, "Digitale Kompaktkameras"),

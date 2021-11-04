@@ -1,4 +1,6 @@
-
+"""
+Sample customer data
+"""
 sample_customers = [
     # customer_id, name,       address,                                        phone
     (898179, "Joan Hendricks", "1745 T Street Southeast, DC 20020 Washington", "1-651-860-6337"),
