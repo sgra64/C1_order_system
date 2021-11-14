@@ -1,14 +1,11 @@
-import sys
-sys.path.append("..")   # Path hack needed to run from commandline
-from C1_order_system.datamodel import Order, last_name_func
-from C1_order_system import cds, sds, ods
+from datamodel import Order, last_name_func
 
 """
 Customer, Stock, Order, OrderItem are classes defined in the datamodel module.
 Objects of these classes are business objects relevant for order processing.
 
 cds, sds, ods are global singleton objects defined the C1_order_system_full module
-(C1_order_system_full.__init__.py):
+(C1_order_system_full.top.py):
  - cds, data store with Customer objects (subjects in orders)
  - sds, data store with Stock objects (orderable items)
  - ods, data store with Order objects (represent orders with >= 1 ordered items)
@@ -67,6 +64,26 @@ def print_orders(_customer_id: int):
 
 
 if __name__ == "__main__":
+    import sys
+    sys.path.append("..")  # error when running from commandline: No module named 'C1_order_system'
+
+    import data
+    import datastore as ds
+
+    # public DataStore objects
+    cds = ds.CustomerDataStore()
+    sds = ds.StockDataStore()
+    ods = ds.OrderDataStore()
+
+    # DataFactory object instantiation without reference, invoke chainable functions
+    ds.DataFactory(cds, sds, ods) \
+        .import_customers(data.customers) \
+        .import_stock(data.stock) \
+        .import_orders(data.order_items)
+
+    print(f"--> {cds.size()} customers, {sds.size()} stock items, {ods.size()} "
+          "orders loaded.")
+
     # print number of orders in OrderStore and CustomerStore
     print(f"{len(ods.find_all_orders())} orders in OrderStore")
     print(f"{len(cds.find_all_customers())} customers in CustomerStore")

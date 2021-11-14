@@ -1,5 +1,5 @@
 from collections import Iterable
-from C1_order_system.datastore import CustomerDataStore, StockDataStore, OrderDataStore, DataFactory
+from . import CustomerDataStore, StockDataStore, OrderDataStore, DataFactory
 import C1_order_system.datamodel as dm
 
 

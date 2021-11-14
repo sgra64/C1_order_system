@@ -1,4 +1,4 @@
-from C1_order_system.datamodel.Customer import Customer, last_name_func
-from C1_order_system.datamodel.Stock import Stock
-from C1_order_system.datamodel.Order import Order
-from C1_order_system.datamodel.Order import OrderItem
+from .Customer import Customer, last_name_func
+from .Stock import Stock
+from .Order import Order
+from .Order import OrderItem
